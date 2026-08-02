@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive solar system</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Controls Instruction-->
+  <div class = "controls-hint">
+    <strong>Navigation:</strong><br>
+    Scroll to Zoom In/Out<br>
+    Click & Drag background to Pan<br>
+    Click any Celestial Body for Details
+  </div>
+  <!-- Space viewport-->
+   <div id = "space-viewport">
+    <div id = "system-container">
+      <div class = "sun" data-name="Sun"></div>
+    </div>
+   </div>
+
+  <!--Planet Fact card Panel-->
+  <div id = "info-panel">
+    <button class = "close-btn" id = "close-panel">&times;</button>
+    <h2 id = "panel-name">Earth</h2>
+    <p class = "type" id = "panel-type">Terrestrial Planet</p>
+    <div class = "fact-item">
+      <span class = "label">Diameter:</span>
+      <span class = "value" id = "panel-size">-</span>
+    </div>
+    <div class = "fact-item">
+      <span class = "label">Distance from Sun:</span>
+      <span class = "value" id = "panel-distance">-</span>
+    </div>
+    <div class = "fact-item">
+      <span class = "label">Orbit Period:</span>
+      <span class = "value" id = "panel-period">-</span>
+    </div>
+    <div class = "fact-item">
+      <span class = "label">Moons:</span>
+      <span class="value" id ="panel-moons">-</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+ 
+
+  
+</body>
+</html>
